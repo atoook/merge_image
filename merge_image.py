@@ -4,7 +4,6 @@ import numpy as np
 import tkinter as tk
 from tkinter import filedialog
 from tkinter import messagebox
-from PIL import Image, ImageTk
 
 class Application(tk.Frame):
 
@@ -75,13 +74,13 @@ class Application(tk.Frame):
             self.entry[i].grid(row=i+2, column=0, columnspan=10, pady=3)
             self.entry[i].focus_set()
 
-        tk.Button(self.master, text='select1', width=8,
+        tk.Button(self.master, text='select', width=8,
                   command=lambda: self.select_file(0)).grid(row=2, column=20, columnspan=2)
 
-        tk.Button(self.master, text='select2', width=8,
+        tk.Button(self.master, text='select', width=8,
                   command=lambda: self.select_file(1)).grid(row=3, column=20, columnspan=2)
 
-        tk.Button(self.master, text='select3', width=8,
+        tk.Button(self.master, text='select', width=8,
                   command=lambda: self.select_file(2)).grid(row=4, column=20, columnspan=2)
 
         tk.Button(self.master, text='merge', width=6,
